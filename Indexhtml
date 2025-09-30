@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>Iniciar Sesión - ProfeBoss</title>
   <link rel="stylesheet" href="InicioSesion.css">
-  <script type="module" src="InicioSesion.js"></script>
 </head>
 <body>
   <main>
@@ -12,18 +11,18 @@
     <input type="text" id="nombre" placeholder="Nombre y Apellido">
     <input type="password" id="contraseña" placeholder="Contraseña">
     <button id="btnRegister" onclick="location.href='Registro.html'">Registrar</button>
-    <button id="btnLogin">Iniciar Sesion</button>
+    <button id="btnLogin">Iniciar Sesión</button>
     <p id="mensaje"></p>
   </main>
 
-<p id="mensaje"></p>
-      <img src="Img/LogoTisa.png" alt="Logo del colegio" class="logo-fijo">
+  <img src="Img/LogoTisa.png" alt="Logo del colegio" class="logo-fijo">
 
-        <div class="Snoopy">
-     <p id="mensaje-Snoopy">¡Ingresa sesión para poder comenzar!</p>
-      <img src="Img/Snoopy.png" alt="Snoopy">
-    </div>
+  <div class="Snoopy">
+    <p id="mensaje-Snoopy">¡Ingresa sesión para poder comenzar!</p>
+    <img src="Img/Snoopy.png" alt="Snoopy">
+  </div>
 
+  <!-- 🚨 El JS va siempre al final del body para que carguen antes los elementos -->
+  <script type="module" src="InicioSesion.js"></script>
 </body>
-
 </html>
