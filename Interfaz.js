@@ -28,7 +28,6 @@ const contenido = document.getElementById("contenido");
 const plantilla = (nombre, icono) => `
   <h2>Bienvenido a ${nombre} de ${curso} ${icono}</h2>
   <div class="lesson-path"></div>
-  <div id="Snoopy"></div>
 `;
 
   // Interfaz para cada combinación
@@ -335,4 +334,5 @@ function explorarMateria(materia) {
 
 window.abrirModal = abrirModal;
 window.cerrarModal = cerrarModal;
+
 window.explorarMateria = explorarMateria;
