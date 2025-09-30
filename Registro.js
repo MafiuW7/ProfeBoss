@@ -22,7 +22,7 @@ btn.addEventListener("click", async () => {
     mensaje.textContent = "✅ Usuario registrado. Redirigiendo al login...";
     mensaje.style.color = "green";
 
-    setTimeout(() => { window.location.href = "InicioSesion.html"; }, 1400);
+    setTimeout(() => { window.location.href = "index.html"; }, 1400);
   } catch (err) {
     console.error(err);
     mensaje.textContent = "Error: " + (err.message || err);
@@ -32,3 +32,4 @@ btn.addEventListener("click", async () => {
     btn.textContent = "Registrarse";
   }
 });
+
