@@ -133,7 +133,7 @@ cerrarModalBtn.addEventListener("click", () => (modal.style.display = "none"));
 // --- EJERCICIOS --- //
 ejerciciosData["Matemáticas-5° Básico"] = {
   1: [
-    { pregunta: "Si tengo un submarino a más de 600.000m de profundidad, ¿Cómo escribirías esa profundidad?", respuesta: "-600000" },
+    { pregunta: "Si tengo un submarino a más de 600.000m de profundidad, ¿Cómo escribirías esa profundidad?", respuesta: "seiscientos mil" },
     { pregunta: "Escribe en palabras lo siguiente: 578206", respuesta: "quinientos setenta y ocho mil doscientos seis" },
     { pregunta: "Si un avión vuela a 200m y se eleva 100 más, ¿Cómo expresarías la altura en la que quedó?", respuesta: "300" },
     { pregunta: "Ordena de mayor a menor: 369, 1997, 13248, 2, 11", respuesta: ["13248","1997","369","11","2"], tipo: "ordenar" },
@@ -156,7 +156,7 @@ ejerciciosData["Matemáticas-5° Básico"] = {
 };
 ejerciciosData["Matemáticas-6° Básico"] = {
   1: [
-    { pregunta: "Un colegio tiene 8 765 libros en la biblioteca y recibe una donación de 4 532 libros más. ¿Cuántos libros tiene ahora en total?", respuesta: "13097" },
+    { pregunta: "Un colegio tiene 8 765 libros en la biblioteca y recibe una donación de 4 532 libros más. ¿Cuántos libros tiene ahora en total?", respuesta: "13297" },
     { pregunta: "En una ciudad viven 25 480 personas. En un pueblo cercano hay 12 365 personas. ¿Cuántas personas más tiene la ciudad que el pueblo?", respuesta: "13015" },
     { pregunta: "Un estadio tiene 12 350 asientos y se vendieron entradas para 3 partidos. ¿Cuántas entradas se vendieron en total?", respuesta: "37050" },
     { pregunta: "Una fábrica produce 48 600 galletas y quiere guardarlas en cajas de 150 galletas cada una. ¿Cuántas cajas completas se pueden llenar?", respuesta: "324" },
@@ -336,3 +336,4 @@ window.abrirModal = abrirModal;
 window.cerrarModal = cerrarModal;
 
 window.explorarMateria = explorarMateria;
+
