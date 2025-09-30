@@ -29,7 +29,7 @@ btn.addEventListener("click", async () => {
     } else if (!usuario.materiaPrincipal) {
       window.location.href = "SeleccionMateria.html";
     } else {
-      window.location.href = "Interfaz.html";
+      window.location.href = "index.html";
     } }, 2000);
   }
 
@@ -40,3 +40,4 @@ btn.addEventListener("click", async () => {
     mensaje.style.color = "red";
   };
 });
+
