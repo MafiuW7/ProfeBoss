@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>ProfeBoss</title>
+  <link rel="stylesheet" href="Seleccion_G.css">
+</head>
+<body>
+<main>
+  <h1>Selecciona tu materia <br> principal</h1>
+  <button onclick="guardarMateria('Lenguaje')">Lenguaje</button>
+  <button onclick="guardarMateria('Matemáticas')">Matemáticas</button>
+  <button onclick="guardarMateria('Ciencias')">Ciencias</button>
+  <button onclick="guardarMateria('Historia')">Historia</button>
+</main>
+
+    <p id="mensaje"></p>
+      <img src="Img/LogoTisa.png" alt="Logo del colegio" class="logo-fijo">
+    </main>
+
+        <div class="Snoopy">
+     <p id="mensaje-Snoopy">¡Selecciona la materia que más <br> se te dificulte!.</p>
+      <img src="Img/Snoopy.png" alt="Snoopy">
+    </div>
+
+<!--Para que funcione el selector de materia-->
+<script type="module" src="SeleccionMateria.js"></script>
+
+  <script type="module">
+    import { doc, updateDoc, getFirestore } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
+    import { app } from "./FireBase.js";
+
+    const db = getFirestore(app);
+    const uid = sessionStorage.getItem("uid");
+
+    window.guardarMateria = async (materiaPrincipal) => {
+      await updateDoc(doc(db, "usuarios", uid), { materiaPrincipal });
+      window.location.href = "Interfaz.html";
+    };
+  </script>
+</body>
+</html>

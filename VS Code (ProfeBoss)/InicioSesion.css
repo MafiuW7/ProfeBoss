@@ -1,0 +1,99 @@
+
+/*Fondo*/
+body {
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+  font-family: 'Comic Sans MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+/*Formulario*/
+main {
+    background-color: #ffffffcc;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  margin: auto 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #2d5be3;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/*Nombre-Apellido y contraseña*/
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #2d5be3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a3cb8;
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+}
+
+/*Logo Tisa*/
+.logo-fijo{
+position: fixed;
+top: 20px;
+left: 20px;
+width: 120px;
+z-index: 9999;
+}
+
+/*Snoopy*/
+.Snoopy {
+    width: 10px;
+    height: auto;
+    max-height: 60px;
+    margin: 70px;
+  }
+
+
+#mensaje-Snoopy {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: -120px;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
