@@ -6,35 +6,7 @@
   <link rel="stylesheet" href="Interfaz.css">
   <!-- Iconos FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <div class="container">
-    <!-- Barra lateral -->
-    <aside class="sidebar">
-      <div class="logo">ProfeBoss</div>
-      <nav>
-        <ul>
-          <li><button class="nav-btn active"><i class="fas fa-book"></i> Aprender</button></li>
-          <li><button class="nav-btn"><i class="fas fa-bolt"></i> Desafíos</button></li>
-          <li><button class="nav-btn" onclick="abrirModal()"><i class="fas fa-book-open"></i> Otras Materias</button></li>
-          <li><button class="nav-btn"><i class="fas fa-user"></i> Perfil</button></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <!-- Contenido dinámico -->
-    <main class="main-content">
-      <h1 id="titulo"></h1>
-      <div id="contenido"></div>
-    </main>
-  </div>
-
-       <div id="Snoopy" class="Snoopy">
-        <p id="mensaje-Snoopy">¡Vamos, esfuerzate y aprende!.</p>
-        <img src="Img/Snoopy.png" alt="Snoopy">
-       </div>
-
-<!--Modal para cambiar materia-->
+  <!--Modal para cambiar materia-->
 <div id="modalMateria" class="modal">
   <div class="modal-content">
     <h2>Explora otra materia</h2>
@@ -62,5 +34,33 @@
 </div>
 
   <script type="module" src="Interfaz.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div class="logo">ProfeBoss</div>
+      <nav>
+        <ul>
+          <li><button class="nav-btn active"><i class="fas fa-book"></i> Aprender</button></li>
+          <li><button class="nav-btn"><i class="fas fa-bolt"></i> Desafíos</button></li>
+          <li><button class="nav-btn" onclick="abrirModal()"><i class="fas fa-book-open"></i> Otras Materias</button></li>
+          <li><button class="nav-btn"><i class="fas fa-user"></i> Perfil</button></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Contenido dinámico -->
+    <main class="main-content">
+      <h1 id="titulo"></h1>
+      <div id="contenido"></div>
+    </main>
+  </div>
+
+       <div id="Snoopy" class="Snoopy">
+        <p id="mensaje-Snoopy">¡Vamos, esfuerzate y aprende!.</p>
+        <img src="Img/Snoopy.png" alt="Snoopy">
+       </div>
 </body>
+
 </html>
