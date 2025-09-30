@@ -1,0 +1,191 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #10a2c7;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.nav-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.nav-btn:hover, .nav-btn.active {
+  background-color: #2a2f36;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+div.lesson-path {
+  text-align: center;
+  margin-top: 60px;
+}
+.lesson-node {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  opacity: 0;
+  animation: aparecer 0.6s forwards;
+}
+
+.lesson-node.locked {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.lesson-node.filled {
+  background: #4caf50;
+  color: white;
+}
+
+.path-line {
+  width: 4px;
+  height: 30px;
+  background: #ccc;
+  margin: 0 auto;
+  opacity: 0;
+  animation: aparecer 0.6s forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0,0,0,0.5);
+  justify-content: center; 
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.cerrar {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#contenidoEjercicio input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+#feedback {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#btnCompletar {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #10a2c7;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#btnCompletar:hover {
+  background: #0d7d98;
+}
+
+.sortable-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.draggable {
+  padding: 10px 15px;
+  background: #f1f1f1;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: grab;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.draggable:active {
+  cursor: grabbing;
+  background: #ddd;
+}
+
+/*Snoopy*/
+.Snoppy img {
+    width: 10px;
+    height: auto;
+    max-height: 60px;
+    padding: 30px;
+  }
+
+
+#mensaje-Snoopy {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
