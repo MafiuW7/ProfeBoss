@@ -4,6 +4,20 @@
   <meta charset="utf-8">
   <title>ProfeBoss</title>
   <link rel="stylesheet" href="Seleccion_G.css">
+  <script type="module" src="SeleccionMateria.js"></script>
+
+  <script type="module">
+    import { doc, updateDoc, getFirestore } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
+    import { app } from "./FireBase.js";
+
+    const db = getFirestore(app);
+    const uid = sessionStorage.getItem("uid");
+
+    window.guardarMateria = async (materiaPrincipal) => {
+      await updateDoc(doc(db, "usuarios", uid), { materiaPrincipal });
+      window.location.href = "Index.html";
+    };
+  </script>
 </head>
 <body>
 <main>
@@ -23,20 +37,7 @@
       <img src="Img/Snoopy.png" alt="Snoopy">
     </div>
 
-<!--Para que funcione el selector de materia-->
-<script type="module" src="SeleccionMateria.js"></script>
 
-  <script type="module">
-    import { doc, updateDoc, getFirestore } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
-    import { app } from "./FireBase.js";
-
-    const db = getFirestore(app);
-    const uid = sessionStorage.getItem("uid");
-
-    window.guardarMateria = async (materiaPrincipal) => {
-      await updateDoc(doc(db, "usuarios", uid), { materiaPrincipal });
-      window.location.href = "Index.html";
-    };
-  </script>
 </body>
 </html>
+
